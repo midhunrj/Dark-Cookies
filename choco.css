@@ -90,12 +90,24 @@ body{
 #nav-item li a:hover{
     color: #FECF73;
 }
+
+.itc{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items:flex-end; 
+}
+
  @media screen and(max-width: 991px){
 .navbar-toggler-icon {
     display: block;
     visibility: visible;
 }
 }
+.navbar-toggler{
+    color: transparent;
+    margin-right: 100px;
+}
+
 .navbar-toggler-icon{
     color:#FECF73;
     font-size: 28px;
@@ -172,8 +184,8 @@ span{
     position: relative;
     width:100%;    
 }
-.container img{
-    width:fit-content;
+.container #bikis{
+    width:100%;
     object-fit: contain;
 }
 .ritle{
@@ -253,13 +265,9 @@ span{
     width:100%;
     float:left;
 }
-#cuki{
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
+
 @media screen and(max-width:768px){
     .cuki{
-        display:block;
         width:60px;
         height:60px;
     }
