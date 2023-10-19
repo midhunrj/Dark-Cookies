@@ -36,7 +36,7 @@ body{
 #header{
     width:100%;
     height:150px;
-    background:transparent;
+    background:#1f0607;
     /* min-height: 80px; */
     -webkit-animation-name: fadein;
     -webkit-animation-duration: 1s;
@@ -70,7 +70,7 @@ body{
     padding: 12px 0;
 }
 .collapse{
- background-color: transparent;
+ background-color: #1f0607;
  transition: 0s ease;
 }
  @media screen and(max-width:768px) {
