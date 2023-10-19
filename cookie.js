@@ -1,19 +1,7 @@
-$(document).ready(function(){
-    $(window).scroll(function(){
-        var scroll = $(window).scrollTop();
-        if (scroll > 300) {
-          $(".header").css("background" , "red");
-        }
-  
-        else{
-            $(".header").css("background" , "transparent");  	
-        }
-    })
-  })
-  /**
+/**
    * Toggle .header-scrolled class to #header when page is scrolled
    */
-  let selectHeader = select('.header')
+  let selectHeader = select('#header')
   if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {
@@ -25,8 +13,28 @@ $(document).ready(function(){
     window.addEventListener('load', headerScrolled)
     onscroll(document, headerScrolled)
   }
+  var header = document.querySelector('header'); // Identify target
 
+window.addEventListener('scroll', function(event) { // To listen for event
+    event.preventDefault();
 
+    if (window.scrollY <= 150) { // Just an example
+        header.style.backgroundColor = '#000'; // or default color
+    } else {
+        header.style.backgroundColor = 'transparent';
+    }
+});
+
+$(document).ready(function(){
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 300) {
+          $(".collapse").css("background" , "red");
+        } else{
+            $(".header").css("background" , "transparent");  	
+        }
+    })
+  })
  /**
    * Back to top button
    */
